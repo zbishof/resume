@@ -1,0 +1,321 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.3 (22/9/2018)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% v1.3 author:
+% Zachary Taylor
+%
+% v1.3 repository:
+% https://github.com/ZDTaylor/Deedy-Resume-Reversed
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Add various styling and section options and allow for multiple pages smoothly.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.3:
+% 1. Removed MacFonts version as I have no desire to maintain it nor access to macOS
+% 2. Switched column ordering
+% 3. Changed font styles/colors for easier human readability
+% 4. Added, removed, and rearranged sections to reflect my own experience
+% 5. Hid last updated
+%
+% v1.2:
+% 1. Added publications in place of societies.
+% 2. Collapsed a portion of education.
+% 3. Fixed a bug with alignment of overflowing long last updated dates on the top right.
+%
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-reversed}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Zachary Bishof}{ %\urlstyle{same}\href{http://example.com}{example.com}| \href{http://example2.co}{example2.co}\\
+\bf New Orleans, LA \hspace{0.1em}  \textbullet{} \hspace{0.1em} \href{mailto:blindmath@gmail.com}{blindmath@gmail.com} \hspace{0.1em} \textbullet{} \hspace{0.1em} (239)398-1605 \hspace{0.1em}  \textbullet \hspace{0.1em}  LinkedIn://  \href{https://www.linkedin.com/in/zachary-bishof-8905921a6/}{\bf zachary-bishof}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.60\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Naval Research Laboratory}
+\descript{| Mathematician}
+\location{April 2021 – Present | Stennis Space Center, MS}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed CLU, a novel method for calibrating \textbf{uncertainty} for \textbf{human-machine teams} in the presence of \textbf{data drift}, leveraging \textbf{reinforcement learning} techniques.
+\item \textbf{Published research} in \textit{Entropy} on CLU and \textbf{signal detection}, demonstrating its role in advancing \textbf{uncertainty calibration} in human-machine teams.
+\item Collaborated on applying signal detection theory and uncertainty models, accelerating advancements in \textbf{cognitive feedback} research for \textbf{interactive machine learning}.
+\item Research on CLU and cognitive feedback models led to \textbf{two patent applications}, solidifying the novel approach for human-machine collaboration under uncertainty.
+\item \textbf{Successfully advanced development} of classifier prototype, boosting \textbf{classification speed} by factor of \textbf{5.5 million}, validated through benchmarking and customer demos.
+\item Enhanced \textbf{ArcGIS application development} by implementing comprehensive \textbf{unit tests in C\#}, improving \textbf{software reliability} and performance.
+\item Leading the development of a \textbf{multi-objective reinforcement learning model} to address uncertainty in \textbf{geospatial data analysis}.
+\item Applying \textbf{reinforcement learning} and \textbf{maximum likelihood estimation} to model \textbf{human preferences} in complex workflow labeling tasks.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Community Organized Relief Effort}
+\descript{| Data Analyst }
+\location{Jan 2021 – Apr 2021 | New Orleans, LA}
+\begin{tightemize}
+	\item Analyzed and reported on \textbf{demographic data} of COVID-19 testing patients, providing \textbf{key insights} to guide \textbf{public health decisions} during the peak of the pandemic.
+	\item Developed \textbf{predictive models} for vaccine distribution in the greater New Orleans area, optimizing logistics and ensuring timely delivery to priority populations.
+\end{tightemize}
+\sectionsep
+
+%\runsubsection{University of New Orleans}
+%\descript{Research Assistant, Statistics Instructor }
+%\location{May 2019 – May 2020 | New Orleans, LA}
+%\begin{tightemize}
+%\item Worked as a research assistant for Prof. Bierhorst's work involving quantum information.
+%\item Ran a statistics course just before and during the onset of the pandemic.
+%\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Projects}
+%\runsubsection{Space Robotics Team}
+%\descript{| Path-Planning Lead}
+%\location{Jan 2018 – Present | Somewhere, XX}
+%\begin{tightemize}
+%\item Spearhead the development effort for the path-planning functionality of a team of three robots.
+%\item ROS provides movement servers and the planning is being implemented in Python to allow for fully-autonomous operation.
+%\end{tightemize}
+%\sectionsep
+%
+%\runsubsection{Chit Chat}
+%\descript{| Class Project for Distributed Client-Server Programming}
+%\location{Jan 2018 – May 2018 | Somewhere, XX}
+%\begin{tightemize}
+%\item Lead the development of \textbf{\href{https://github.com/user/repo}{Chit Chat}}, an anonymous chat application created as a class project.
+%\item Chit Chat provides real-time communication while utilizing a PHP backend and AngularJS frontend.
+%\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Research}
+% \runsubsection{Cornell Robot Learning Lab}
+% \descript{| Researcher}
+% \location{Jan 2014 – Jan 2015 | Ithaca, NY}
+% Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.
+% \sectionsep
+
+% \runsubsection{Cornell Phonetics Lab}
+% \descript{| Head Undergraduate Researcher}
+% \location{Mar 2012 – May 2013 | Ithaca, NY}
+% Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research.
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications and Patents}
+\begin{itemize}
+	\item Bishof, Zachary, Jaelle Scheuerman, and Chris J. Michael. "Closed-Loop Uncertainty: The Evaluation and Calibration of Uncertainty for Human-Machine Teams under Data Drift." Entropy 25.10 (2023): 1443. (\textit{MDPI})
+	\item Scheueman, Jaelle, Zachary Bishof, and Chris J. Michael. "Modeled Cognitive Feedback to Calibrate Uncertainty for Interactive Learning." (Poster presented at the Interactive Learning with Implicit Human Feedback Workshop, ICML 2023)
+	\item "System and Method fo Closed-Loop Uncertainty for Human-Machine Teamwork", Application No. US-20250036982-A1
+	\item "Method and System for Calibrating Uncertainty for Interactive Learning Using Modeled Cognitive Feedback via Machine Learning", Application No. US-20250036983-A1 
+\end{itemize}
+\nocite{*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COMMUNITY SERVICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Community Service}
+
+% \begin{tabular}{rll}
+% 2013 -- 2018    & Tennessee     & St. Baldrick's Foundation\\
+% 2014 -- 2017	& Tennessee     & American Cancer Society's Hope Lodge\\
+% 2013 -- 2015    & Tennessee     & Habitat for Humanity\\
+% 2011 -- 2015    & Tennessee     & Special Olympics\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Societies}
+
+% \begin{tabular}{rll}
+% 2018 -- 2018    & National      & Association of Computing Machinery (ACM)\\
+% 2017 -- 2019	& National      & Scrum Alliance Certified ScrumMaster\\
+% 2015 -- 2019    & University    & Shackouls Honors College\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards}
+% \begin{tabular}{rll}
+% 2015        & 99\textsuperscript{th} percentile & National Merit Scholarship Finalist\\
+% \end{tabular}
+% \sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.33\textwidth}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{Education}
+
+\subsection{University of New Orleans}
+\descript{M.S. in Mathematics}
+\location{2020 | New Orleans, LA}
+\sectionsep
+
+\subsection{Florida State University}
+\descript{B.S. in Physics}
+\location{2014 | Tallahassee, FL}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Key Skills}
+\subsection{Clearance}
+Active DoD Secret Clearance
+\sectionsep
+
+\subsection{Programming Languages}
+\location{Proficient:}
+R \textbullet{} Python \\
+\location{Experienced:}
+ C\# \textbullet{} SQL \textbullet{} SAS \\
+\sectionsep
+
+\subsection{Technical Skills}
+Machine Learning \\
+Reinforcement Learning \\
+Uncertainty Modeling \\
+Large Language Models \\
+Online Learning \textbullet{} Human-in-the-loop \\
+Software Development \textbullet{} Data Science \\
+\sectionsep
+
+\subsection{Tools/Software}
+LaTeX \\
+ArcGIS
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Coursework}
+%\subsection{Graduate}
+%Analysis of Algorithms
+%\sectionsep
+%
+%\subsection{Undergraduate}
+%Artificial Intelligence \\
+%{\footnotesize \textit{\textbf{(Teaching Assistant) }}} \\
+%AI Robotics \\
+%Operating Systems I \\
+%Calculus I-IV \\
+%Data Analysis I \\
+%Introduction to Probability \\
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Societies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Societies}
+%Association for Computing Machinery (ACM)\\
+%Scrum Alliance Certified ScrumMaster\\
+%University Honors College\\
+%National Merit Scholarship Finalist \\
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
